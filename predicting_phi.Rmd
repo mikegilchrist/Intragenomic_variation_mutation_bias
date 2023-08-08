@@ -427,7 +427,7 @@ y.label <- "Predicted Expression"
 
 runs.k.1 <- paste0("Results/ConstMut/",species,"/run_2/Parameter_est/gene_expression.txt")
 runs.k.2 <- paste0("Results/VarMut/",species,"/run_2/Parameter_est/gene_expression.txt")
-codonw.files <- paste0("/data2/cope/codonW/",species,"/",str_replace(species,".cds",".out_all"))
+codonw.files <- paste0("Results/CodonW/",species,"/",str_replace(species,".cds",".out_all"))
 
 mixtures <- paste0("Results/Clustering/",species)
 emp.data <- paste0("Data/Expression/",species)
