@@ -10,7 +10,7 @@ output: html_document
 knitr::opts_chunk$set(echo=F, results='hide',message=F)
 #rm(list=ls())
 library(tidyverse)
-library(AnaCoDa,lib.loc="~/R_dev")
+library(AnaCoDa,lib.loc="~/R/lib/4.3-dev")
 library(rtracklayer)
 library(cowplot)
 library(ggpubr)
