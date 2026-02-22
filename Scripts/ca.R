@@ -4,6 +4,7 @@ library(ca)
 library(cluster)
 library(argparse)
 
+#set up argument parser
 parser <- ArgumentParser()
 parser$add_argument("-i","--input",help="FASTA file with protein-coding sequences",type="character")
 parser$add_argument("-o","--output",help="Output directory",type="character",default="./")
@@ -14,13 +15,15 @@ input <- args$input
 output <- args$output
 k <- args$num_clusters
 
-
+#define paths
 genome.file <- file.path("Genomes","Genomes","cds_cleaned",input)
 
+#initialize genome object 
 genome <- initializeGenomeObject(genome.file)
 size <- length(genome)
 
-genes <- lapply(1:size,function(x){tmp<-genome$getGeneByIndex(x,F);tmp$seq})
+genes <- lapply(1:size, function(x) {
+  tmp <- genome$getGeneByIndex(x, F);tmp$seq})
 
 genes <- lapply(genes,function(x){unlist(strsplit(x,split="",fixed=T))})
 
