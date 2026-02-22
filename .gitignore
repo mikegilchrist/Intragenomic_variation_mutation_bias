@@ -55,6 +55,10 @@ vignettes/*.pdf
 predicting_phi.html
 predicting_phi.pdf
 
+# Emacs auto-save and backup files
+\#*\#
+*~
+
 # Ignore system files
 .DS_Store
 
