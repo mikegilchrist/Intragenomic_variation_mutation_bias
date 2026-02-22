@@ -46,3 +46,15 @@ vignettes/*.pdf
 **/R_objects
 **/R_objects/parameter.Rda
 **/R_objects/mcmc.Rda
+
+# Ignore temporary files and reports
+.RDataTmp/
+.bfg-report/
+
+# Ignore generated reports
+predicting_phi.html
+predicting_phi.pdf
+
+# Ignore system files
+.DS_Store
+
